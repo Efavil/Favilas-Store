@@ -157,10 +157,21 @@ header nav ul li:hover::after {
     justify-content: center;
     align-items: center;
     opacity: 0;
+
+    /* ANIMAÇAO */
+
+    transform: translateX(100vw);
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
-.active {
+
+
+.iten.active {
     opacity: 1;
+
+    /* ANIMAÇAO */
+
+    transform: translateX(0);
 }
 
 .product-img {
@@ -177,6 +188,18 @@ header nav ul li:hover::after {
     max-width: 80%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.2));
+
+    /* ANIMAÇAO */
+
+    transform: translateX(400px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+.active .product-img img {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .content {
@@ -195,14 +218,28 @@ header nav ul li:hover::after {
     color: #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .product-name {
     font-size: 4.5rem;
+    font-weight: 800;
     font-family: "Orbitron", sans-serif;
     line-height: 1.1;
     margin-bottom: 20px;
+    margin-top: 0px;
+
+        /* ANIMAÇAO */
+
+    transform: translateX(200px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+.active .product-name {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .product-description {
@@ -211,7 +248,20 @@ header nav ul li:hover::after {
     line-height: 1.6;
     margin-bottom: 30px;
     max-width: 600px;
+     
+            /* ANIMAÇAO */
+
+    transform: translateX(200px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
 }
+
+.active .product-description {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 .btn {
     position: relative;
