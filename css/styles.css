@@ -77,6 +77,7 @@ header nav ul li:hover::after {
     filter: blur(50px);
     z-index: 1;
     animation: pulse 4s infinite alternate;
+    pointer-events: none;
 }
 
 @keyframes pulse {
@@ -275,7 +276,7 @@ header nav ul li:hover::after {
     cursor: pointer;
     border: none;
     transition: ease;
-    z-index: 1;
+    z-index: 10;
 }
 
 .btn::after {
