@@ -220,6 +220,18 @@ header nav ul li:hover::after {
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 5px;
+
+            /* ANIMAÇAO */
+
+    transform: translateX(200px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    transition-delay: 0.5s;
+    opacity: 0;
+}
+
+.active .product-tag {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .product-name {
